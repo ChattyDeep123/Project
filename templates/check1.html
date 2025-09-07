@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+
+{% block meta %}
+    {% if success %}
+        <meta http-equiv="refresh" content="2;url=/">
+    {% else %}
+        <meta http-equiv="refresh" content="2;url=/signup">
+    {% endif %}
+{% endblock %}
+
+
+{% block body %}
+    {{fail}}
+    {{success}}
+{% endblock %}

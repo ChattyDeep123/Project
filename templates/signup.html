@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <form action="/check1" method="post">
+        <input autocomplete="off" autofocus name="name" type="text" placeholder="Username">
+        <input autocomplete="off" name="pwd1" type="text" placeholder="Password">
+        <input autocomplete="off" name="pwd2" type="text" placeholder="Confirm password">
+        <input type="submit">
+    </form>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+    <form action="/chat" method="post">
+        <textarea autofocus name="ques" placeholder="Type here to chat" rows="4" cols="50"></textarea>
+        <input type="submit">
+    </form>
+
+    {% if ques %}
+        You said: {{ques}}
+    {% endif %}
+{% endblock %}
